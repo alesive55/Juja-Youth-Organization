@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+.banner{
+    position:absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    transition: 1.0s
+}
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    font-size: 3em;
+    z-index: 40;
+    color: #fff;
+
+}
+
+.plus{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+    position: absolute;
+    top: 2%;
+    left: 8.5%;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.plus:hover{
+    font-size: 40px;
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    opacity: 0.8;
+}
+.text{
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    margin: 0.0%;
+    left: 1cm;
+    top: 40%;
+
+    
+    
+}
+
+.text h3 {
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+}
+
+.text p {
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.button {
+    color: #fff;
+    position:fixed;
+    z-index: 10;
+    top: 65%;
+    left: 2%;
+    margin: 80px auto 0;
+}
+
+.button a{
+    position: relative;
+    width: 150px;
+    text-decoration: none;
+    display:inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    text-align: center;
+    z-index: 1;
+    transition:0.5s;
+}
+
+.button a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 1s;
+}
+.button a:hover span {
+    width: 100%;
+}
+.button a:hover {
+    color: black;
+}
+
+#menunav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgb(19, 18, 19);
+    z-index: 2;
+    opacity: 0.6;
+    transition: 0.5s;
+    mix-blend-mode:normal
+    
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+    mix-blend-mode: lighten;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    mix-blend-mode: lighten;
+    transition: 0.5;
+
+
+}
+nav ul li a:hover{
+    color: aqua;
+}
+
+#menubn {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 3;
+}
+#menubn img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    filter: invert();
+}
+
+@media screen and (max-width: 770px){
+    .text{
+       top: 35%;
+       left:2%
+    }
+    .text h3 {
+        font-size: 3em;
+        font-weight: 800;
+        line-height: 1em;
+    }
+    
+    .text p {
+        font-size: 2em;
+        font-weight: 300;
+        text-align: left;
+    }
+    .button a {
+        display: block;
+        margin: 20px auto;
+    }
+    #menunav{
+        width: 200px;
+        height: auto;
+        opacity: 0.6;
+    } 
+    #menubn img{
+        width: auto;
+        height: auto;
+        margin: 10px;
+        filter: invert();
+
+    
+    } 
+    nav ul li{
+        list-style: none;
+        margin: 30px 30px;
+        mix-blend-mode: lighten;
+    } 
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        mix-blend-mode: lighten;
+        font: size 10px;
+    }   
+}
